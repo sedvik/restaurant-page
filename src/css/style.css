@@ -1,0 +1,198 @@
+/* Fonts */
+@font-face {
+    font-family: 'Dkbutteredtoast';
+    src: url("../fonts/Dkbutteredtoast-xJZ8.otf") format("opentype");
+}
+
+/* General Styles */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #B4C9DD;
+}
+
+header {
+    background-color: #2E5D54;
+    border-bottom: 3px solid #75454A;
+    height: 3rem;
+}
+
+em {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > button {
+    width: 25%;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #97B351;
+    color: firebrick;
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dkbutteredtoast', cursive;
+    font-weight: bold;
+    font-size: 4rem;
+    color: firebrick;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: firebrick;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+#content {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: papayawhip;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 1px #75454A;
+}
+
+/* Home Styles */
+#home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-container,
+.hours-container {
+    background-color: #cee29c;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0 auto 1rem auto;
+    width: 50%;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.hours-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.day {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.aside {
+    font-size: 0.9rem;
+}
+
+#cul-de-sac-fig {
+    width: 90%;
+    margin: 1rem auto 1rem auto;
+}
+
+/* Menu Styles */
+
+/* Contact Styles */
+
+/* Media Queries */
+@media only screen and (max-width: 1100px) {
+    /* General Styles */  
+    nav {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* General Styles */
+    header {
+        height: 8rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav > button {
+        height: 2rem;
+        margin: 0.2rem;
+        font-size: 1.2rem;
+        width: 45%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Home Page */
+    .quote-container,
+    .hours-container {
+        width: 80%;
+    }
+}

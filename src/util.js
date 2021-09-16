@@ -55,9 +55,9 @@ const domUtil = (function() {
         if (options.class) {
             _addClass(elem, options.class);
         }
-
+        
         // Add specified attributes
-        if (Object.keys(options.attributes).length !== 0) {
+        if (options.attributes !== undefined && Object.keys(options.attributes).length !== 0) {
             _addAttribute(elem, options.attributes);
         }
 

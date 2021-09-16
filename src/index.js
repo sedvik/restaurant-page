@@ -1,14 +1,39 @@
 import { domUtil, domCache } from './util.js';
 import { createHomepageContent } from './homepage.js';
+import { createMenuContent } from './menu.js';
+import { createContactContent } from './contact.js';
 
-const body = domCache.body;
-domUtil.removeContent(body);
-const homepageContent = createHomepageContent();
-body.appendChild(homepageContent);
-/*
-const p = domUtil.create('p', 'I have some text, cool huh?');
+// onButtonClick - handles page tab button click logic
+function onButtonClick(e) {
+    // tabContentFunction will hold the appropriate content generation function
+    let tabContentFunction;
+    const id = e.target.id;
 
-const body = domCache.body;
+    if (id === 'home-btn') {
+        tabContentFunction = createHomepageContent;
+    } else if (id === 'menu-btn') {
+        tabContentFunction = createMenuContent;
+    } else if (id === 'contact-btn') {
+        tabContentFunction = createContactContent;
+    }
 
-console.log(p);
-*/
+    // Clear #content div
+    const contentDiv = domCache.contentDiv;
+    domUtil.removeContent(contentDiv);
+
+    // Create new content and append to contentDiv
+    const content = tabContentFunction();
+    contentDiv.appendChild(content);
+}
+
+// assignTabEvents - assigns event listeners to page tabs
+function assignTabEvents() {
+    const tabs = domCache.tabs;
+    tabs.forEach(tab => {
+        tab.addEventListener('click', onButtonClick);
+    });
+}
+
+// Assign event listeners to buttons and load the homepage
+assignTabEvents();
+domCache.contentDiv.appendChild(createHomepageContent());

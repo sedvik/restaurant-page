@@ -55,7 +55,7 @@ const domUtil = (function() {
         if (options.class) {
             _addClass(elem, options.class);
         }
-        
+
         // Add specified attributes
         if (options.attributes !== undefined && Object.keys(options.attributes).length !== 0) {
             _addAttribute(elem, options.attributes);
@@ -89,7 +89,8 @@ const domUtil = (function() {
 // domCache - contains commonly used DOM nodes to reduce document.querySelector calls
 const domCache = {
     body: document.body,
-    content: document.querySelector('#content'),
+    contentDiv: document.querySelector('#content'),
+    tabs: document.querySelectorAll('.tab')
 };
 
 export { domUtil, domCache };

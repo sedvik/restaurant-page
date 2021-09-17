@@ -25,6 +25,7 @@ em {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 figcaption {
@@ -54,8 +55,8 @@ nav > button {
     margin-right: 0.5rem;
     background-color: #97B351;
     color: firebrick;
-    font-family: cursive;
-    font-size: 1.5rem;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.6rem;
     font-weight: bold;
 }
 
@@ -69,15 +70,33 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     color: firebrick;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: firebrick;
 }
 
 p {
     text-align: center;
+    font-family: 'Hind', sans-serif;
+}
+
+hr {
+    height: 1px;
+    background-color: #75454A;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #content {
@@ -141,6 +160,29 @@ p {
 }
 
 /* Menu Styles */
+.description {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.6rem;
+    border-radius: 10px;
+    background-color: rgb(252, 197, 146);
+}
+
+.price {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: rgb(44, 41, 41);
+}
+
+.menu > img {
+    display: block;
+    margin: 0.5rem auto 1rem auto;
+    width: 85%;
+    border-radius: 10px;
+}
 
 /* Contact Styles */
 
@@ -156,7 +198,11 @@ p {
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
     }
 
     #content {
@@ -178,16 +224,20 @@ p {
     nav > button {
         height: 2rem;
         margin: 0.2rem;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         width: 45%;
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 
     /* Home Page */
@@ -195,4 +245,14 @@ p {
     .hours-container {
         width: 80%;
     }
+
+    /* Menu Page */
+    .price {
+        font-size: 1.5rem;
+    }
+    
+    .menu > img {
+        width: 95%;
+    }
+    
 }

@@ -6,7 +6,7 @@ function createQuote(quote, author) {
     const quoteContainer = domUtil.create('div', '', { class: 'quote-container' });
 
     // children
-    const quoteP = domUtil.create('p', quote, { class: 'quote' });
+    const quoteP = domUtil.create('p', `"${quote}"`, { class: 'quote' });
     const quoteAuthorP = domUtil.create('p', `- ${author}`, { class: 'author' });
 
     // append children to parent
@@ -84,7 +84,7 @@ function createAboutCard() {
 
     // children
     const h2 = domUtil.create('h2', 'About');
-    const p = domUtil.create('p', 'PLACEHOLDER');
+    const p = domUtil.create('p', "The finest breakfast establishment in the Cul-de-Sac. From gravy to buttered toast, we have foods that will satisfy most.");
 
     // append children to parent
     const children = [ h2, p ];
@@ -99,8 +99,8 @@ function createTestimonialsCard() {
 
     // children
     const h2 = domUtil.create('h2', 'Testimonials');
-    const quote1 = createQuote('EXAMPLE QUOTE', 'Ralph');
-    const quote2 = createQuote('This is a quote', 'Jimmy');
+    const quote1 = createQuote('Very impressive, Ed Boy...', 'Ralph');
+    const quote2 = createQuote('Through the teeth and under the gums! Watch out, tummy! Here it comes!', 'Jimmy');
 
     // append children to parent
     const children = [ h2, quote1, quote2 ];

@@ -26,6 +26,7 @@ em {
 img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 figcaption {
@@ -53,11 +54,15 @@ nav > button {
     height: 2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    background-color: #97B351;
+    background-color: rgb(240, 208, 32);
     color: firebrick;
     font-family: 'Gochi Hand', cursive;
     font-size: 1.6rem;
     font-weight: bold;
+}
+
+nav > button:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -181,7 +186,6 @@ hr {
     display: block;
     margin: 0.5rem auto 1rem auto;
     width: 85%;
-    border-radius: 10px;
 }
 
 /* Contact Styles */

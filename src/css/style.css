@@ -189,6 +189,44 @@ hr {
 }
 
 /* Contact Styles */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.info-container {
+    width: 45%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.photo-container {
+    text-align: center;
+    width: 45%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container {
+    background-color: rgb(252, 197, 146);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.contact-container > p {
+    margin: 0.5rem;
+}
+
+.occupation {
+    font-weight: bold;
+}
+
+
 
 /* Media Queries */
 @media only screen and (max-width: 1100px) {
@@ -211,6 +249,11 @@ hr {
 
     #content {
         width: 90%;
+    }
+
+    /* Contact Styles */
+    .photo-container {
+        width: 30%;
     }
 }
 
@@ -259,4 +302,9 @@ hr {
         width: 95%;
     }
     
+    /* Contact Page */
+    .profile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }

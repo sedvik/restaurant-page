@@ -36,4 +36,4 @@ function assignTabEvents() {
 
 // Assign event listeners to buttons and load the homepage
 assignTabEvents();
-//domCache.contentDiv.appendChild(createHomepageContent());
+domCache.contentDiv.appendChild(createHomepageContent());

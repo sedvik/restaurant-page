@@ -5,7 +5,7 @@ import { createContactContent } from './contact.js';
 
 // onButtonClick - handles page tab button click logic
 function onButtonClick(e) {
-    // tabContentFunction will hold the appropriate content generation function
+    // tabContentFunction will hold the appropriate content generation function depending on the clicked tab
     let tabContentFunction;
     const id = e.target.id;
 

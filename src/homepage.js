@@ -163,16 +163,14 @@ function createHomeContainer() {
 
 // Creates homepage content wrapper, which contains all page content
 function createHomepageContent() {
-    // Create content wrapper div
+    // parent
     const homepageContent = domUtil.create('div', '', { class: 'content-wrapper' });
     
-    // Create homepage h1
+    // children
     const h1 = domUtil.create('h1', "Ed, Edd, n Eddy's Breakfast Bar");
-
-    // Create home container div
     const homeContainer = createHomeContainer();
 
-    // Append homepageContent children
+    // append homepageContent children
     const children = [ h1, homeContainer ];
     domUtil.appendChildren(homepageContent, children);
 

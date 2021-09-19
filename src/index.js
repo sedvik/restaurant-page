@@ -2,6 +2,7 @@ import { domUtil, domCache } from './util.js';
 import { createHomepageContent } from './homepage.js';
 import { createMenuContent } from './menu.js';
 import { createContactContent } from './contact.js';
+import './css/reset.css';
 import './css/style.css';
 
 // onButtonClick - handles page tab button click logic
